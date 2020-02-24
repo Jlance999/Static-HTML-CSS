@@ -1,5 +1,6 @@
 <!DOCKTYPE html>
 <html>
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 	<head>
 		<meta charset="utf-8">
 		<title>GrowPMF</title>
@@ -9,7 +10,7 @@
 		<p><strong>GrowPMF</strong>:
 		Grow,
 
-		<div> Lists
+		<div> <h1>Lists:</h1>
 			<ul> 
   				<li>Physically</li>
   				<li>Mentally</li>
@@ -24,7 +25,7 @@
 		</div>
 		</p>
 
-		<div> Headers
+		<div> <h1>Headers:</h1>
 			<h1>My main title</h1>
 			<h2>My top level heading</h2>
 			<h3>My subheading</h3>
@@ -32,7 +33,7 @@
 			<img src="" alt="My test image">
 		</div>
 
-		<div> Forms
+		<div> <h1>Forms:</h1>
 			<form action ="/do-thing">
 				Radio Buttons:
 				<label><input type="radio" name="true-false" checked>True</label>
@@ -46,6 +47,77 @@
 				<button type ="submit">Submit</button>
 
 			</form>
+		</div>
+
+		<div> <h1>Text color: </h1>
+			<h2 style="color: greenyellow;">Green Text</h2>
+			<style>
+				p {
+					color:blueviolet;
+				}
+				.red-text {
+					color:red
+				}
+			</style>
+			<p>
+				Purple Text
+			</p>
+			<p class="red-text">
+				Red Text
+			</p>
+		</div>
+
+		<div> <h1>Font type: </h1>
+			<style>
+				.fontchange {
+					font-family:cursive;
+				}
+
+				.imported{
+					font-family:Lobster, sans-serif; <!-- Alternate font type if first unavailable-->
+				}
+			</style>
+
+			<p class="fontchange">
+				Cursive Text
+			</p>
+
+			<p class="imported">
+				Imported Google font
+			</p>
+			
+		</div>
+
+		<div> <h1>Size Control / Borders: </h1>
+			<style>
+				.small-img {
+					width: 100px;
+				}
+				.circular-img {
+					border-radius: 50%;
+				}
+				.thin-red-border {
+					border-color: red;
+					border-width: 5px;
+					border-style: solid;
+			  	}
+
+				.curved-blue-border {
+					border-color: blue;
+					border-width: 8px;
+					border-style: solid;
+					border-radius: 5px;
+				}
+			</style>
+		</div>
+
+		<div> <!--Color Control-->
+			<style>
+				body {
+					background-color:#1f1f1f;
+					color:honeydew;
+				}
+			</style>
 		</div>
 	</body>
 	
